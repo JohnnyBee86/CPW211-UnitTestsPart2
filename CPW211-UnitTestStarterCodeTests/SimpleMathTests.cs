@@ -41,7 +41,7 @@ namespace CPW211_UnitTestStarterCode.Tests
             Assert.ThrowsException<ArgumentException>(() => SimpleMath.Divide(10, 0));
         }
 
-        // TODO: Test Divide method with two valid numbers
+        
         [TestMethod]
         [DataRow(5, 10)]
         [DataRow(0, 100)]
@@ -49,10 +49,11 @@ namespace CPW211_UnitTestStarterCode.Tests
         [DataRow(25, -5)]
         public void Divide_TwoNumbers_ReturnsQuotient(double num1, double num2)
         {
+            // Test Divide method with two valid numbers
             Assert.AreEqual(num1 / num2, SimpleMath.Divide(num1, num2));
         }
 
-        // TODO: Test subtract method with two valid numbers
+        
         [TestMethod]
         [DataRow(5, 10)]
         [DataRow(0, 100)]
@@ -60,6 +61,7 @@ namespace CPW211_UnitTestStarterCode.Tests
         [DataRow(25, -5)]
         public void Subtract_TwoNumbers_ReturnsDifference(double num1, double num2)
         {
+            // Test subtract method with two valid numbers
             Assert.AreEqual(num1 - num2, SimpleMath.Subtract(num1, num2));
         }
     }
